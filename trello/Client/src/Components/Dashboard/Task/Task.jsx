@@ -31,7 +31,7 @@ const Task = ({ task, onStatusButtonClick, onDelete }) => {
 
   const updateBackendChecklist = async (taskId, checklistItems) => {
     try {
-      const response = await fetch(`http://localhost:5000/task/tasks/${taskId}/checklist`, {
+      const response = await fetch(`https://promanageapi.onrender.com/task/tasks/${taskId}/checklist`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const Task = ({ task, onStatusButtonClick, onDelete }) => {
     const authToken = localStorage.getItem('authToken');
     try {
       const response = await axios.put(
-        `http://localhost:5000/task/tasks/${task._id}`,
+        `https://promanageapi.onrender.com/task/tasks/${task._id}`,
         updatedTask,
         {
           headers: {
