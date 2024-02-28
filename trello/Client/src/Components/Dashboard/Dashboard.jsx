@@ -24,7 +24,7 @@ export default function Dashboard() {
 
   const fetchUsername = async () => {
     try {
-      const response = await fetch('http://localhost:5000/auth/username', {
+      const response = await fetch('https://promanageapi.onrender.com/auth/username', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export default function Dashboard() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:5000/task/tasks', {
+      const response = await fetch('https://promanageapi.onrender.com/task/tasks', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export default function Dashboard() {
 
   const handleStatusButtonClick = async (taskId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/task/tasks/${taskId}/status`, {
+      const response = await fetch(`https://promanageapi.onrender.com/task/tasks/${taskId}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ export default function Dashboard() {
 
   const handleDeleteButtonClick = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:5000/task/tasks/${taskId}`, {
+      const response = await fetch(`https://promanageapi.onrender.com/task/tasks/${taskId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
