@@ -35,7 +35,7 @@ export default function Setting() {
       }
       
       const authToken = localStorage.getItem('authToken');
-      const response = await axios.post('http://localhost:5000/auth/update', {
+      const response = await axios.post('https://promanageapi.onrender.com/auth/update', {
         name: name,
         oldPassword: oldPassword,
         newPassword: newPassword
