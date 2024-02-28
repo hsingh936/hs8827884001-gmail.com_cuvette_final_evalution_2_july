@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.leftside {
+    height: 100vh;
+    width: 1008.84px;
+    background-color: rgba(23, 162, 184, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.astroImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assImg {
+    height: 301.82px;
+    width: 260.86px;
+}
+
+.paraspan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.para {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    font-size: 33.08px;
+}
+
+.span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    font-size: 19.29px;
+}
+
+.rightside {
+    height: 100vh;
+    width: 669.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.textheader {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: 2px solid rgba(208, 208, 208, 1);
+    border-radius: 20px;
+}
+
+.emailInput {
+    padding-left: 10px;
+    width: 537px;
+    height: 40px;
+    padding-bottom: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.passwordInput {
+    padding-left: 10px;
+    width: 493px;
+    height: 40px;
+    padding-bottom: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.eyeIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.buttonsdiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.registerButton {
+    width: 493px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 2px solid rgba(23, 162, 184, 1);
+    color: rgba(23, 162, 184, 1);
+    cursor: pointer;
+
+}
+
+.noAccount {
+    width: 300px;
+    height: 26px;
+    margin-top: 10px;
+    margin-left: 280px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(130, 130, 130, 1);
+}
+
+.loginButton {
+width: 493px;
+height: 50px;
+margin-left: 100px;
+background: transparent;
+border: none;
+outline: none;
+border-radius: 50px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+color: white;
+background-color: rgba(23, 162, 184, 1);
+cursor: pointer;
+
+}
+
+.error {
+    color: rgba(219, 55, 31, 1);
+    font-family: 'Open Sans', sans-serif;
+}
+

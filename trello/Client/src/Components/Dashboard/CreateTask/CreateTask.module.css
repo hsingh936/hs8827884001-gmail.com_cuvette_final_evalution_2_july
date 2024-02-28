@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.taskDetails {
+    height: 596px;
+    width: 666px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  .taskHeader {
+    display: flex;
+    flex-direction: column;
+    width: 588px;  
+    margin-bottom: 20px;
+  }
+
+  .taskHeader h3::after {
+    content: '*';
+    color: red;
+  }
+  
+  .titleInput {
+    width: 512px; 
+    height: 24px; 
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .prioritySelector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 592px;
+    height: 31px;
+  }
+  
+  .prioritySelector > span {
+    color: rgba(32, 16, 43, 1);
+    margin-right: 10px;
+  }
+
+  .prioritySelector > span::after {
+    content: '*';
+    color: red;
+  }
+  
+  .prioritySelector > div {
+    display: flex;
+  }
+  
+
+  .priorityButton {
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: rgba(118, 117, 117, 1);
+    width: 145px;
+    height: 31px;
+    border: 1px solid rgba(226, 226, 226, 1);
+    border-radius: 12px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .priorityDot {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .highPriority .priorityDot {
+    background-color: rgba(255, 36, 115, 1); 
+  }
+  
+  .mediumPriority .priorityDot {
+    background-color: rgba(24, 176, 255, 1); 
+  }
+  
+  .lowPriority .priorityDot {
+    background-color: rgba(99, 192, 91, 1); 
+  }
+
+  .selected {
+    background-color: rgba(238, 236, 236, 1);
+  }
+  
+  .checklistContainer {
+    overflow-y: auto;
+  }
+
+  .checklistHeader {
+    font-size: 14px;
+  }
+
+  .red {
+    color: red;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .checklistItemsContainer {
+    width: 588px;
+    max-height: 223px;
+    overflow-y: auto;
+  }
+
+  .checklistItemsContainer::-webkit-scrollbar {
+    width: 12px;
+    background-color: none;
+  }
+
+  .checklistItemsContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 183, 197, 1); 
+    border-radius: 10px; 
+  }
+
+  .checklistItem {
+    position: relative; 
+    display: flex;
+    width: 520px;
+    height: 44px;
+    border: 2px solid rgba(208, 208, 208, 1);
+    border-radius: 20px;
+    right: 30px;
+    gap: 5px;
+  }
+  
+  .deleteBtn {
+    position: absolute;
+    top: 50%;
+    right: 5px; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .deleteImg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(2.5);
+    margin-bottom: 15px; 
+    margin-left: 17px;
+  }
+
+  label input[type="text"] {
+    font-size: 16px;
+    font-weight: 400;
+    height: 20px;
+    margin-top: 11px;
+    margin-left: 15px;
+    width: 450px;
+    border: none;
+    outline: none; 
+  }
+
+  .addBtn {
+    width: 92px;
+    height: 19px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgba(118, 117, 117, 1);
+  }
+  
+  .taskDueDate {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dueDatePicker {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .calendarButton {
+    width: 185px;
+    height: 45px;
+    position: fixed;
+    bottom: 50px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgba(112, 112, 112, 1);
+    border: 1px solid rgba(226, 226, 226, 1);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .calendarContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .taskBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .taskBody button {
+    margin-right: 10px;
+  }
+
+.Buttons {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 337.16px;
+    height: 45px;
+    bottom: 50px;
+    left: 50%;
+}
+
+ .saveButton {
+    width: 162.58px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(23, 162, 184, 1);
+    border-radius: 20px;
+}
+
+.cancelButton {
+    width: 162.58px;
+    height: 45px;
+    border: 1px solid rgba(207, 54, 54, 1);
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    color: rgba(207, 54, 54, 1);
+    cursor: pointer;
+}
+
+  

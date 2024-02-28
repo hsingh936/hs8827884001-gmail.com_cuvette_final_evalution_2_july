@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.Card {
+    width: 312px;
+    height: 368px;
+    overflow: hidden;  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-left: 27px;
+    margin-right: 20px;
+    padding-bottom: 22px;      
+    transition: max-height 0.3s ease;
+}
+
+.taskTitleContainer {
+  width: 150px;
+  height: 27px;
+  margin-top: 10px;
+}
+
+.taskTitle {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 27px;
+  margin-top: 0px;
+  margin-left: 14px ;
+  color: rgba(0, 0, 0, 1);
+}
+
+.priority {
+    width: 312px;
+    height: 12px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+    margin-left: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.priorityDot {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;  
+    margin-right: 5px;
+  }
+
+  .dropdown {
+    position: absolute;
+    margin-left: 250px;
+    
+  }
+  
+  .dropdownButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .dropdownContent {
+    position: absolute;
+    top: 100%;
+    right: 100%; 
+    background-color: #f9f9f9;
+    height: 100px;
+    min-width: 120px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1; 
+    box-shadow: 0px 2px 22px 0px rgba(126, 122, 122, 0.25);
+
+  }
+  
+  .dropdownContent button {
+    display: block;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .dropdownContent button:hover {
+    background-color: #f9f9f9;
+  }
+
+.checklist {
+    width: 100px;
+    height: 10px;
+    font-size: 14px;
+    line-height: 16.94px;
+    margin-left: 14px;
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.checklistContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center; 
+  }
+  
+  .checklistText {
+    margin-right: 10px;
+  }
+
+  .checklistItemsContainer {
+    padding: 10px;
+  }
+
+  .checklistItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 264px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    background: transparent;
+    background-color: #f9f9f9;
+  }
+
+  .checklistBoxes {
+    width: 18px;
+    height: 10px;
+    margin-bottom: 18px;   
+  }
+
+  .downBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+  }
+  
+  .arrowImg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .taskFooter {
+    width: 270px;
+    height: 22px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    position: absolute; 
+    bottom: 0; 
+  }
+
+
+  .dueDateButton {
+    width: 53px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 38px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 8px;
+    border-radius: 8px;
+    padding:5px, 10px, 5px, 10px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgba(118, 117, 117, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .pastDue {
+    background-color: rgba(207, 54, 54, 1);
+  }
+
+  .done {
+    background-color: rgba(99, 192, 91, 1);
+  }
+
+.statusButtons {
+    width: 174px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.backlogButton {
+    width: 58px;
+    height: 22px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgba(238, 236, 236, 1);
+    color: rgba(118, 117, 117, 1);
+    font-size: 8px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px, 10px, 5px, 10px;
+    cursor: pointer;
+}
+
+.todoButton {
+    width: 48px;
+    height: 22px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgba(238, 236, 236, 1);
+    color: rgba(118, 117, 117, 1);
+    font-size: 8px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px, 10px, 5px, 10px;
+    cursor: pointer;
+}
+
+.progressButton {
+    width: 62px;
+    height: 22px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgba(238, 236, 236, 1);
+    color: rgba(118, 117, 117, 1);
+    font-size: 8px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px, 10px, 5px, 10px;
+    cursor: pointer;
+}
+
+.doneButton {
+    width: 42px;
+    height: 22px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgba(238, 236, 236, 1);
+    color: rgba(118, 117, 117, 1);
+    font-size: 8px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px, 10px, 5px, 10px;
+    cursor: pointer;
+}
+
+.ConfirmationModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); 
+  z-index: 9999; 
+}
+
+.ConfirmationModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 335.19px;
+  height: 200px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10.91px;
+  text-align: center;
+}
+
+.ConfirmationMessage {
+  width: 261.24px;
+  height: 10px;
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ConfirmationModalButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.ConfirmButton {
+  width: 300px;
+  height: 45px;
+  padding: 17px, 4px, 17px, 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background: transparent;
+  background-color: rgba(23, 162, 184, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.CancelButton {
+  width: 300px;
+  height: 45px;
+  padding: 17px, 4px, 17px, 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid rgba(207, 54, 54, 1);
+  border-radius: 12px;
+  outline: none;
+  color: rgba(207, 54, 54, 1);
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskmodalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TaskmodalContainer {
+  width: 666px;
+  height: 596px;
+  top: 214px;
+  left: 451px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+}

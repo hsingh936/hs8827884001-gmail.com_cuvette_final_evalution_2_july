@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 1678.64px;
+}
+
+.rightside {
+    height: 100vh;
+    width: auto;
+}
+
+.Header {
+    width: 86px;
+    height: 30px;
+    margin-top: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);   
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 493.39px;
+    height: 308.16px;
+    margin-top: 10vh;  
+}
+
+.inputWrapper {
+    width: 493.39px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    border: 1.38px solid rgba(208, 208, 208, 1);
+    border-radius: 20px;
+}
+
+.nameInput, .oldpassInput, .newpassInput {
+    width: 493.39px;
+    height: 55.13px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 19.29px;
+}
+
+.eyeIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+}
+
+
+.updateBtn {
+    width: 493px;
+    height: 50px;
+    margin-left: 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(23, 162, 184, 1);
+    cursor: pointer;
+}    

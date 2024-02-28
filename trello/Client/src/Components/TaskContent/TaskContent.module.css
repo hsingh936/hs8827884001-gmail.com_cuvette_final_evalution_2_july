@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.proHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-left: 150px;
+}
+
+
+.detailsContainer {
+    width: 654px;
+    height: 546px;
+    margin-top: 100px;
+    margin-left: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.priority {
+    width: 139px;
+    height: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.deatilspriorityDot {
+    width: 9px;
+    height: 9px;
+    margin-top: 1px;
+}
+
+.prioritylevel {
+    width: 65px;
+    margin-left: 5px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(112, 112, 112, 1);
+}
+
+
+.detailsTitle {
+    width: 139px;
+    height: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.deatilspriorityDot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.priorityDotHigh {
+    background-color: rgba(255, 36, 115, 1);
+}
+
+.priorityDotMedium {
+    background-color: rgba(24, 176, 255, 1);
+}
+
+.priorityDotLow {
+    background-color: rgba(99, 192, 91, 1);
+}
+
+.checklistContainer {
+    width: 588px;
+    height: 323px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.deatilschecklist {
+    width: 120px;
+    height: 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.detailschecklistItems {
+    width: 588px;
+    max-height: 245px; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.detailschecklistItem {
+    width: 570px;
+    height: 43px;
+    border-radius: 20px;
+    border: 1px solid rgba(226, 226, 226, 1);
+    display: flex;
+    flex-direction: row;
+}
+
+.detailschecklistItem span {
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.detailsdueDate {
+    width: 159px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.detailsdueDateLabel {
+    width: 65px;
+    height: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.detailsdueDateBtn {
+    width: 78px;
+    height: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    outline: none;
+    background: rgba(207, 54, 54, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.detailschecklistItems::-webkit-scrollbar {
+    width: 12px;
+    background-color: none;
+}
+
+
+.detailschecklistItems::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 183, 197, 1); 
+    border-radius: 10px; 
+}
+
+
+@media screen and (max-width: 767px) {
+    .proHeader {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-left: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .detailsContainer {
+        width: 312px;
+        height: 368px;
+        margin-top: 100px; 
+        margin-left: 25px;
+        margin-right: 10px;
+        overflow: hidden
+    }
+
+    .priorityAndTitle {
+        width: auto; 
+        height: 40px;
+        display: flex;
+        flex-direction: column; 
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .detailspriority {
+        margin-left: 18px;
+    }
+
+    .detailschecklistItems {
+        width: 100%;
+        max-height: 166px; 
+        overflow-y: auto; 
+    }
+
+    .detailschecklistItem {
+        width: 264px;
+        height: 42px;
+    }
+
+    .detailschecklistItem span {
+        margin-left: 20px;
+    }
+
+    .detailschecklistItems::-webkit-scrollbar {
+        width: 12px;
+        background-color: none;
+    }
+    
+    
+    .detailschecklistItems::-webkit-scrollbar-thumb {
+        background-color: rgba(156, 183, 197, 1); 
+        border-radius: 10px; 
+    }
+
+
+    
+}

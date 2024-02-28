@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.MainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.SubContainer {
+    height: 100vh;
+    max-width: 1512px;
+    overflow-x: auto;
+}
+
+.SubContainer::-webkit-scrollbar {
+    width: 12px;
+    background-color: none;
+}
+
+.SubContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 183, 197, 1); 
+    border-radius: 10px;
+}
+
+.Username {
+    width: 196px;
+    height: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.NameDate{
+    display: flex;
+    flex-direction: row;
+}
+
+.currentDate { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(112, 112, 112, 1);
+    margin-top: 10px;
+    margin-left: 950px; 
+}
+
+.headerName {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterDropdown {
+    width: 96px;
+    height: 24px;
+    margin-left: 1080px;
+    margin-top: 20px;
+}
+
+.filterDropdownOptions {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.backlogSection, .todoSection, .progressSection, .doneSection {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 100vh;
+    background-color: rgba(238, 242, 245, 1);
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.headerContainer {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
+
+.imageContainer {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.btn1, .btn2, .btn3, .btn4, .addBtn{
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.TaskmodalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TaskmodalContainer {
+    width: 666px;
+    height: 596px;
+    top: 214px;
+    left: 451px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+  }

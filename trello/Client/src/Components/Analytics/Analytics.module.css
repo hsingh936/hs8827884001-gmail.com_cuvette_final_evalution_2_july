@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.MainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.headerAnal {
+    width: 96px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.analContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.analLeft {
+    width: 475px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.analWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 412px;
+    height: 14px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(144, 196, 204, 1);
+    margin-top: 5px;
+}
+
+.dotbackValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 120px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dottodoValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 134px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dotprogressValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 93px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dotdoneValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 96px; 
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.analRight {
+    width: 475px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.dotlowValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 140px; 
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dotmedValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 98px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dothighValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 138px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.dotdueValue {
+    width: 24px;
+    height: 14px;
+    margin-left: 115px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
