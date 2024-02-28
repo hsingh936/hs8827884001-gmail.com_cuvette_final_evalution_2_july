@@ -16,7 +16,7 @@ export default function Analytics() {
 
   const fetchDetails = async () => {
     try {
-      const response = await fetch('http://localhost:5000/task/tasks', {
+      const response = await fetch('https://promanageapi.onrender.com/task/tasks', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
