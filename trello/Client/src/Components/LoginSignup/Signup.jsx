@@ -87,7 +87,7 @@ export default function Signup() {
       return; 
     }
 
-    axios.post('http://localhost:5000/auth/Signup', { name, email, password }) 
+    axios.post('https://promanageapi.onrender.com/auth/Signup', { name, email, password }) 
       .then(response => {
         console.log(response.data);
         navigate('/login');
