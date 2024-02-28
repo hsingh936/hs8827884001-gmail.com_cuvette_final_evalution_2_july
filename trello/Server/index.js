@@ -16,7 +16,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://promanage-nine.vercel.app', 
+  methods: ["POST", "GET", "DELETE", "PUT"],
+  credentials: true
+}));
 
 
 app.use('/auth', authRoutes); 
