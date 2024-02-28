@@ -11,7 +11,7 @@ export default function TaskContent() {
     useEffect(() => {
         const fetchTask = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/task/tasks/${taskId}`);
+                const response = await axios.get(`https://promanageapi.onrender.com/task/tasks/${taskId}`);
                 setDetails(response.data);
             } catch (error) {
                 console.error('Error fetching task:', error);
