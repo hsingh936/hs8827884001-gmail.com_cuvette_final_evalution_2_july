@@ -63,7 +63,7 @@ function Edit({ onClose, task, onSubmit }) {
 
       await onSubmit({ title, priority, checklistItems, dueDate: selectedDate });
       onClose();
-      toast.success('Task updated successfully! Please refresh the page.');
+      toast.success('Task updated successfully! Please render the page again to see the changes.');
 
     } catch (error) {
       console.error('Error updating task:', error);
