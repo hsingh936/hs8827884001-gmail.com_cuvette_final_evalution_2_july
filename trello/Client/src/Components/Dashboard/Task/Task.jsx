@@ -13,6 +13,7 @@ const Task = ({ task, onStatusButtonClick, onDelete }) => {
   const [showConfirmationModal, setShowConfirmationModal] = useState(false); 
   const [showEditModal, setShowEditModal] = useState(false);
   const [cardHeight, setCardHeight] = useState('368px');
+  const [arrowDirection, setArrowDirection] = useState('down');
 
   const toggleCheckbox = (index) => {
     const updatedChecklistItems = [...checklistItems];
@@ -31,7 +32,7 @@ const Task = ({ task, onStatusButtonClick, onDelete }) => {
 
   const updateBackendChecklist = async (taskId, checklistItems) => {
     try {
-      const response = await fetch(`https://promanageapi.onrender.com/task/tasks/${taskId}/checklist`, {
+      const response = await fetch(`http://localhost:5000/task/tasks/${taskId}/checklist`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +53,7 @@ const Task = ({ task, onStatusButtonClick, onDelete }) => {
     const authToken = localStorage.getItem('authToken');
     try {
       const response = await axios.put(
-        `https://promanageapi.onrender.com/task/tasks/${task._id}`,
+        `http://localhost:5000/task/tasks/${task._id}`,
         updatedTask,
         {
           headers: {
@@ -161,8 +162,10 @@ const Task = ({ task, onStatusButtonClick, onDelete }) => {
         <div className={styles.checklist}>
           <span>Checklist</span>
           <span>({`${checklistItems.filter(item => item.checked).length}/${checklistItems.length}`})</span>
-          <button className={styles.downBtn} onClick={() => setShowChecklistItems(!showChecklistItems)}>
-            <img className={styles.arrowImg} src={arrow} alt="" />
+          <button className={styles.downBtn} onClick={() => {
+            setShowChecklistItems(!showChecklistItems);
+            setArrowDirection(arrowDirection === 'down' ? 'up' : 'down'); }}>
+              <img className={styles.arrowImg} src={arrow} alt="" style={{ transform: `rotate(${arrowDirection === 'down' ? '0deg' : '180deg'})` }} />
           </button>
         </div>
 
