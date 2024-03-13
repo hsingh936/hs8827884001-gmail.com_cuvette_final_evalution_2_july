@@ -202,6 +202,10 @@
         margin-left: 20px;
     }
 
+    .detailsdueDate {
+       margin-bottom: 80px; 
+    }
+
     .detailschecklistItems::-webkit-scrollbar {
         width: 12px;
         background-color: none;
